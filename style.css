@@ -17,14 +17,79 @@ main {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 20px 15px;
 }
 
 section {
     background-color: #218374;
     padding: 30px;
     border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
 }
 
 ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ul li {
+    display: flex;
+    align-items: start;
+    gap: 5px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}    
+
+.input-cont {
+    border-radius: 10px;
+    margin: 0 auto 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.input-cont input {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 5px;
+    color: black;
+    transition: .5s;
+    width: 70%;
+}
+
+.input-cont input:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    width: 30%;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+.task-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
 }
